@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Robotic Process Automation</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn about robotic process automation and how it can help your business.">
+    <meta name="keywords" content="robotic process automation, RPA, automation, business">
+    <meta name="author" content="Your Name Here">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Robotic Process Automation</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>      
+    </header>
+    <main>
+      <section>
+        <div class="main-box">
+          <h2>What is Robotic Process Automation?</h2>
+          <p>Robotic Process Automation (RPA) is a software technology that makes it easy to build, deploy, and manage software robots that emulate humans actions interacting with digital systems and software.</p>
+          <p>With RPA, businesses can automate repetitive, time-consuming tasks, freeing up employees to focus on higher-value work.</p>
+        </div>
+      </section>
+      <section>
+        <h2>Why Choose Robotic Process Automation?</h2>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-header">
+              <h3>Increased productivity and efficiency through out processes</h3>
+            </div>
+            <div class="card-body">
+              <p>Productivity and efficiency are key drivers of success in today's fast-paced business environment. With the help of automation technology, companies can significantly increase their productivity and efficiency. By automating repetitive and time-consuming tasks, businesses can free up their employees' time to focus on higher-value activities.</p>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card-header">
+              <h3>Reduced errors and improved quality</h3>
+            </div>
+            <div class="card-body">
+              <p>Human error is a common source of mistakes in any organization, leading to inefficiencies and even costly mistakes. However, with the help of technology, companies can significantly reduce errors and improve the overall quality of their work. Automation can help eliminate errors caused by human factors such as fatigue, distraction, and lack of focus.</p>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card-header">
+              <h3>Cost savings through automation of repetitive, mundane tasks</h3>
+            </div>
+            <div class="card-body">
+              <p>In today's fast-paced business environment, time is money. By automating repetitive and mundane tasks, businesses can free up valuable time and resources that can be redirected towards more strategic initiatives. Automation can help streamline workflows, reduce errors, and increase efficiency, ultimately leading to significant cost savings for the organization.</p>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card-header">
+              <h3>Scalability and flexibility to meet changing business needs.</h3>
+            </div>
+            <div class="card-body">
+              <p>In today's rapidly changing business environment, it's essential for companies to be agile and adaptable. The ability to scale up or down quickly, depending on market demands and changing business needs, can mean the difference between success and failure</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bottom-box">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Process assessment and automation consulting</li>
+          <li>Software robot development and deployment</li>
+          <li>Process monitoring and optimization</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Your Company Name. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      const sections = document.querySelectorAll('section');
+      const options = {
+        threshold: 0.5,
+        rootMargin: "-50px 0px -200px 0px"
+      };
+
+      const sectionObserver = new IntersectionObserver(function(entries, sectionObserver) {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add('appear');
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      sections.forEach(section => {
+        sectionObserver.observe(section);
+      });
+    </script>
+  </body>
+</html>
